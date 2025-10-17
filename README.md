@@ -170,18 +170,6 @@ python -c "import sounddevice as sd; print(sd.query_devices())"
 MIT License - Özgürce kullan ve değiştir
 
 
-
----
-
-## 🤝 İyileştirme Önerileri
-
-Hocalardan gelen öneriler:
-- [ ] Farklı dillere destek ekle
-- [ ] GUI arayüz yap (Tkinter/PyQt)
-- [ ] Ses dosyası kaydetme özelliği
-- [ ] Batch işleme (birden fazla dosya)
-- [ ] Ses dosyasından metin çevirme
-
 ---
 
 ## 📞 İletişim & Sorular
