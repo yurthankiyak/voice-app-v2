@@ -169,11 +169,7 @@ python -c "import sounddevice as sd; print(sd.query_devices())"
 
 MIT License - Özgürce kullan ve değiştir
 
----
 
-## 👨‍💻 Geliştirici
-
-**Yurth Ankıyak**
 
 ---
 
