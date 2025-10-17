@@ -8,7 +8,7 @@ Python ile yazılmış, **gerçekçi ses kalitesine** sahip metin-konuşma ve ko
 ✅ **Speech-to-Text (STT)**: Konuşmayı metne çevir  
 ✅ **Türkçe Desteği**: Tam Türkçe dil desteği  
 ✅ **Gerçekçi Ses**: ElevenLabs API ile insan gibi ses  
-✅ **Kolay Kullanım**: Terminal menüsü ile basit arayüz  
+✅ **Kolay Kullanım**: GUI arayüzü ile basit kontrol  
 
 ---
 
@@ -25,8 +25,8 @@ Python ile yazılmış, **gerçekçi ses kalitesine** sahip metin-konuşma ve ko
 
 ### Adım 1: Repoyu İndir
 ```bash
-git clone https://github.com/yurthankiyak/voice-app.git
-cd voice-app
+git clone https://github.com/yurthankiyak/voice-app-v2.git
+cd voice-app-v2
 ```
 
 ### Adım 2: Sanal Ortam Oluştur (İsteğe Bağlı)
@@ -60,51 +60,29 @@ ELEVENLABS_API_KEY=your_api_key_here
 
 ## 💻 Nasıl Kullanılır?
 
-### Uygulamayı Başlat
+### 🖥️ GUI Arayüzü ile (Önerilen)
 ```bash
 python main.py
 ```
 
-### Menü
-```
-==================================================
-🎙️  TEXT-TO-SPEECH & SPEECH-TO-TEXT APP
-==================================================
+Açılan pencerede:
+1. **📝 Yazıyı Sese Çevir:** Metni gir → "🔊 Oynat" butonuna tıkla
+2. **🎤 Sesi Metne Çevir:** "🎤 Konuşmaya Başla" butonuna tıkla, 5 saniye konuş
+3. **🔊 Metni Oynat:** Algılanan metni seslendir
 
-1. Yazıyı sese çevir
-2. Sesi metne çevir
-3. Çıkış
-
-Seçim yapın (1-3):
-```
-
-### Kullanım Örnekleri
-
-#### 1️⃣ Yazıyı Sese Çevir
-```
-Seçim yapın (1-3): 1
-Metni girin: Merhaba, ben bir yapay zeka asistanıyım.
-🔊 'Merhaba, ben bir yapay zeka asistanıyım.' seslendiriliyor...
-▶️  Oynatılıyor...
-```
-
-#### 2️⃣ Sesi Metne Çevir
-```
-Seçim yapın (1-3): 2
-🎤 Konuş (5 saniye)...
-⏳ Dinleniyor...
-✅ Algılanan metin: Merhaba dünya
-Metni geri oynatmak ister misin? (e/h): e
-🔊 'Merhaba dünya' seslendiriliyor...
-```
+### Özellikler
+- ✨ Görsel ve kolay arayüz
+- 🔄 Gerçek zamanlı durum güncellemeleri
+- 🎵 Anında ses oynatma
+- 📋 Tüm işlemler kaydedilir
 
 ---
 
 ## 📁 Proje Yapısı
 
 ```
-voice-app/
-├── main.py                 # Ana uygulama dosyası
+voice-app-v2/
+├── main.py                 # GUI uygulaması
 ├── .env                    # API Key (git tarafından görmezden gelinir)
 ├── .gitignore              # Git'in izlemesini istemediğimiz dosyalar
 ├── requirements.txt        # Kütüphane bağımlılıkları
@@ -190,6 +168,23 @@ python -c "import sounddevice as sd; print(sd.query_devices())"
 ## 📝 Lisans
 
 MIT License - Özgürce kullan ve değiştir
+
+---
+
+## 👨‍💻 Geliştirici
+
+**Yurth Ankıyak**
+
+---
+
+## 🤝 İyileştirme Önerileri
+
+Hocalardan gelen öneriler:
+- [ ] Farklı dillere destek ekle
+- [ ] GUI arayüz yap (Tkinter/PyQt)
+- [ ] Ses dosyası kaydetme özelliği
+- [ ] Batch işleme (birden fazla dosya)
+- [ ] Ses dosyasından metin çevirme
 
 ---
 
